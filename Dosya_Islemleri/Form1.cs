@@ -16,5 +16,31 @@ namespace Dosya_Islemleri
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+                //openfiledialog aracındaki dialog aracını calıstır
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

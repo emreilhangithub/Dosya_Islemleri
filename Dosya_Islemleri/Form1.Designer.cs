@@ -41,6 +41,8 @@ namespace Dosya_Islemleri
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -129,12 +131,34 @@ namespace Dosya_Islemleri
             this.label1.TabIndex = 15;
             this.label1.Text = "Dosya Yolu:";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.ItemHeight = 29;
+            this.listBox1.Location = new System.Drawing.Point(237, 299);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(442, 149);
+            this.listBox1.TabIndex = 21;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(345, 469);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(185, 59);
+            this.button6.TabIndex = 22;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
             this.ClientSize = new System.Drawing.Size(995, 578);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox2);
@@ -167,6 +191,8 @@ namespace Dosya_Islemleri
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button6;
     }
 }
 

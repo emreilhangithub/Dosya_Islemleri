@@ -46,6 +46,20 @@ namespace Dosya_Islemleri
             sw.Close(); //yazma işlemini durdur
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK) //ok tusuna basarsam
+            {
+                StreamReader sr = new StreamReader(openFileDialog1.FileName); //içini file da seçilen dosya adı ile doldur
+                string satir = sr.ReadLine(); //satırı oku
+                while (satir !=null) //satır değeri null değer olana kadar ekle
+                {
+                    listBox1.Items.Add(satir);
+                    satir = sr.ReadLine(); //satırı okut tekrardan
+                }
+            }
+        }
+
         private void button4_Click_1(object sender, EventArgs e)
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK) //ok tusuna basarsam

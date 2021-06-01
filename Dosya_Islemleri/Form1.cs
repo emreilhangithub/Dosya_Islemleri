@@ -60,6 +60,30 @@ namespace Dosya_Islemleri
             }
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "Metin Dosylar|*.txt"; //sadece txtler gozuksun
+            saveFileDialog1.Title = "Metin Belgesi Kayıt"; //filteledigimiz txt yerine bu yazı yazmasını saglar
+            saveFileDialog1.ShowDialog();
+            StreamWriter sw = new StreamWriter(saveFileDialog1.FileName); //sw adlı nense nerden deger alsın biz save file dan alsın dedik yani elle yazsın dedik
+            sw.WriteLine(richTextBox1.Text); //yazdıracagın satırları buradan al
+            sw.Close(); //yazdırmayı durduk
+            MessageBox.Show("Belge Oluşturuldu");
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
+        }
+
         private void button4_Click_1(object sender, EventArgs e)
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK) //ok tusuna basarsam

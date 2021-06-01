@@ -43,6 +43,9 @@ namespace Dosya_Islemleri
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -136,27 +139,58 @@ namespace Dosya_Islemleri
             this.listBox1.FormattingEnabled = true;
             this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 29;
-            this.listBox1.Location = new System.Drawing.Point(237, 299);
+            this.listBox1.Location = new System.Drawing.Point(23, 304);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(442, 149);
             this.listBox1.TabIndex = 21;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(345, 469);
+            this.button6.Location = new System.Drawing.Point(128, 480);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(185, 59);
+            this.button6.Size = new System.Drawing.Size(185, 86);
             this.button6.TabIndex = 22;
-            this.button6.Text = "button6";
+            this.button6.Text = "Metin Belgesi Oku";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(494, 304);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(489, 149);
+            this.richTextBox1.TabIndex = 23;
+            this.richTextBox1.Text = "";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(636, 480);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(204, 86);
+            this.button7.TabIndex = 24;
+            this.button7.Text = "Oluştur";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(419, 623);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(287, 106);
+            this.button8.TabIndex = 25;
+            this.button8.Text = "PDF OKU";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
-            this.ClientSize = new System.Drawing.Size(995, 578);
+            this.ClientSize = new System.Drawing.Size(995, 827);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button5);
@@ -172,6 +206,7 @@ namespace Dosya_Islemleri
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +228,9 @@ namespace Dosya_Islemleri
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
